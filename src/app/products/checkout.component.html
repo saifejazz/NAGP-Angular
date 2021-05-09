@@ -1,0 +1,29 @@
+<h3>Checkout</h3>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+    <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+
+  <div class='card-footer'>
+    <button class='btn btn-outline-secondary'
+            style='width:150px'
+            (click)='backToCart()'>
+      Back to Cart
+    </button>
+  </div>
+
+</form>

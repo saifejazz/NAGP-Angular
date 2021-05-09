@@ -1,0 +1,23 @@
+<nav class='navbar navbar-expand navbar-light bg-light'>
+        <a class='navbar-brand'>{{pageTitle}}</a>
+        <ul class='nav nav-pills'>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/welcome'>Home</a></li>
+          <li><a class='nav-link' routerLinkActive='active' routerLink='/products'>Product List</a></li>
+          <li>
+            <mat-form-field appearance="fill">
+              <mat-label>Choose a Category</mat-label>
+              <mat-select>
+                <mat-option value="mobile"><a class='nav-link' routerLinkActive='active' routerLink='/products'>Mobile Phones</a></mat-option>
+                <!--<mat-option value="mobile"><a [routerLink]="['/categories', categories.categoryId]">{{categories.categoryTitle}}</a></mat-option>-->
+                <mat-option value="wearables"><a class='nav-link' routerLinkActive='active' routerLink='/products'>Wearables</a></mat-option>
+                <mat-option value="monitors"><a class='nav-link' routerLinkActive='active' routerLink='/products'>TVs, Set Top Boxes, Monitors</a></mat-option>
+                <mat-option value="laptops"><a class='nav-link' routerLinkActive='active' routerLink='/products'>Laptops, Tablets, Computers</a></mat-option>
+                <mat-option value="appliances"><a class='nav-link' routerLinkActive='active' routerLink='/products'>Appliances & White Goods</a></mat-option>
+              </mat-select>
+            </mat-form-field>
+          </li>
+        </ul>
+    </nav>
+    <div class='container'>
+      <router-outlet></router-outlet>
+    </div>
