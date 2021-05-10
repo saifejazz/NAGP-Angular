@@ -17,9 +17,10 @@
                       <td>{{ item.price }}</td>
                       <td>{{item.quantity}}</td>
                       <td>
-                        <button class="btn btn-primary btn-sm" (click)=addQty(i)>+</button>
+                        <button class="btn btn-primary btn-sm" (click)=minusQty(i)>-</button>                       
                         1
-                        <button class="btn btn-primary btn-sm" (click)=minusQty(i)>-</button>
+                        <button class="btn btn-primary btn-sm" (click)=addQty(i)>+</button>
+                        <button class="btn btn-primary btn-sm" (click)=deleteFromCart(i)>+</button>
                       </td>
                       
                       <td class="text-right">
