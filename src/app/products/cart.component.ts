@@ -27,7 +27,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = this.cartService.getItems();
-    this.totalPrice = this.cartService.totalPrice;
+    this.totalPrice = Number(localStorage.getItem("totalPrice"));
   //   this.checkoutForm = this.formBuilder.group({
   //   name: '',
   //   address: '',
@@ -46,23 +46,16 @@ export class CartComponent implements OnInit {
       this.router.navigate(['/checkout']);
   }
 
-  // _increamentQTY(id: number, quantity: number): void {
-  //   const payload = {
-  //     productId: id,
-  //     quantity,
-  //   };
-  //   this.http.increaseQty(payload).subscribe(() => {
-  //     this._getCart();
-  //     alert('Product Added');
-  //   });
-  // }
-
   addQty(value: number) {
     console.log(value);
     this.items[value].quantity += 1;
     this.totalPrice = this.items[value].price + this.totalPrice;
     this.cartService.updatedItems(this.items);
     this.cartService.updatePrice(this.totalPrice);
+  }
+
+  deleteFromCart(value: number) {
+
   }
 
   minusQty(value: number) {
