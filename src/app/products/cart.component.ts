@@ -11,8 +11,10 @@ import { IProduct } from "src/app/products/product";
 })
 export class CartComponent implements OnInit {
 
+  quantity: number = 1;
   items:any;
   item: IProduct[] = [];
+  public totalPrice: number = 0;
 
   checkoutForm :any = '';
 
@@ -25,6 +27,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = this.cartService.getItems();
+    this.totalPrice = this.cartService.totalPrice;
   //   this.checkoutForm = this.formBuilder.group({
   //   name: '',
   //   address: '',
@@ -41,6 +44,33 @@ export class CartComponent implements OnInit {
 
   toCheckout(): void {
       this.router.navigate(['/checkout']);
+  }
+
+  // _increamentQTY(id: number, quantity: number): void {
+  //   const payload = {
+  //     productId: id,
+  //     quantity,
+  //   };
+  //   this.http.increaseQty(payload).subscribe(() => {
+  //     this._getCart();
+  //     alert('Product Added');
+  //   });
+  // }
+
+  addQty(value: number) {
+    console.log(value);
+    this.items[value].quantity += 1;
+    this.totalPrice = this.items[value].price + this.totalPrice;
+    this.cartService.updatedItems(this.items);
+    this.cartService.updatePrice(this.totalPrice);
+  }
+
+  minusQty(value: number) {
+    console.log(value);
+    this.items[value].quantity -= 1;
+    this.totalPrice = this.totalPrice - this.items[value].price;
+    this.cartService.updatedItems(this.items);
+    this.cartService.updatePrice(this.totalPrice);
   }
 
 }
