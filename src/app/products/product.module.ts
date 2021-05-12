@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CheckoutComponent } from './checkout.component';
 import { MatSelectModule } from "@angular/material/select";
 import { AuthGuard } from "src/app/auth.guard";
+import { SuccessComponent } from './success.component';
 
 
 
@@ -26,6 +27,7 @@ import { AuthGuard } from "src/app/auth.guard";
     CartComponent,
     ShippingComponent,
     CheckoutComponent,
+    SuccessComponent,
   ],
   imports: [
     FormsModule,
@@ -35,7 +37,8 @@ import { AuthGuard } from "src/app/auth.guard";
     RouterModule.forChild([
       {path:'products', component: ProductListComponent},
       {path:'cart', component: CartComponent, canActivate: [AuthGuard]},
-      {path:'checkout', component: CheckoutComponent},
+      {path:'checkout', component: CheckoutComponent, canActivate: [AuthGuard]},
+      {path:'success', component: SuccessComponent, canActivate: [AuthGuard]},
       {path: 'shipping', component: ShippingComponent},
       {path:'login', component: LoginComponent},
       {

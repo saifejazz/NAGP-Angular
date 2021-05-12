@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
 
   loginForm: any = '';
   isSubmitted  =  false;
+  submitted = false;
   //storageData: string = '';
 
   get formControls() { return this.loginForm.controls; }
@@ -24,6 +25,9 @@ export class LoginComponent implements OnInit {
         password: ['', Validators.required]
     });
   }
+
+  // convenience getter for easy access to form fields
+  get f() { return this.loginForm.controls; }
 
   // login(){
   //   localStorage.setItem('SeesionUser',this.loginForm);
@@ -40,7 +44,14 @@ export class LoginComponent implements OnInit {
   //   this.router.navigateByUrl('/products');
   // }
 
-  login(): void {  
+  login(): void { 
+    // Process checkout data here
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.loginForm.invalid) {
+        return;
+    } 
     if (this.loginForm.value.email != '' && this.loginForm.value.password != '') {  
       if (this.authService.login(this.loginForm.value.email, this.loginForm.value.password)) {  
         this.router.navigate(["home"]);  

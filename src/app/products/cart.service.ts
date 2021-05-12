@@ -41,6 +41,10 @@ export class CartService {
         localStorage.setItem("totalPrice", JSON.stringify(this.totalPrice));       
     }
 
+    deleteFromCart(product: any) {
+        
+    }
+
     getItems() {
         const result = localStorage.getItem("cartData");
         if(result){
