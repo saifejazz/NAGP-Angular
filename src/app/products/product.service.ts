@@ -8,7 +8,7 @@ import { catchError,tap, map } from 'rxjs/operators';
     providedIn: 'root'
 })
 export class ProductService {
-    private productUrl = 'api/products/products.json';
+    private productUrl = 'api/products/productdb.json';
     // private productUrl = 'http://localhost:3000/products';
     
     constructor(private http: HttpClient) {}

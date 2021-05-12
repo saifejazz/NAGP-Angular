@@ -18,6 +18,10 @@ export class CartComponent implements OnInit {
 
   checkoutForm :any = '';
 
+  getItems() {
+    return this.items;
+  }
+
   constructor(
     private formBuilder: FormBuilder,
     private cartService: CartService,
@@ -55,7 +59,10 @@ export class CartComponent implements OnInit {
   }
 
   deleteFromCart(value: number) {
-
+    this.totalPrice = this.totalPrice - this.items[value].price*this.items[value].quantity ;
+    this.items[value].quantity = 0;
+    this.cartService.updatedItems(this.items);
+    this.cartService.updatePrice(this.totalPrice);
   }
 
   minusQty(value: number) {
@@ -64,6 +71,18 @@ export class CartComponent implements OnInit {
     this.totalPrice = this.totalPrice - this.items[value].price;
     this.cartService.updatedItems(this.items);
     this.cartService.updatePrice(this.totalPrice);
+  }
+
+  clearCart() {
+        this.items = [];
+        this.totalPrice = 0;
+        localStorage.setItem("totalPrice", "0");
+        localStorage.setItem("cartData", "");
+        return this.items;
+    }
+
+  checkout(): void {
+      this.router.navigate(['/checkout']);
   }
 
 }

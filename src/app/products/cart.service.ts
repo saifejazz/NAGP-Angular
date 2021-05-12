@@ -38,7 +38,11 @@ export class CartService {
             })
         }
         this.saveToLocalStorage(); 
-        localStorage.setItem("totalPrice", JSON.stringify(this.totalPrice));       
+        localStorage.setItem("totalPrice", JSON.stringify(this.totalPrice));
+    }
+
+    deleteFromCart(product: any) {
+      
     }
 
     getItems() {

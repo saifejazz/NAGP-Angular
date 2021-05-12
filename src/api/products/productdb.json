@@ -1,0 +1,278 @@
+[
+{
+    "categoryId":"a",
+    "productId": 1,
+    "productName": "Canon EOS 1500D",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2021",
+    "description": "Canon EOS 1500D 24.1 Digital SLR Camera (Black)",
+    "price": 19.95,
+    "starRating": 4.4,
+    "imageUrl": "assets/images/Camera1.jpg"
+  }
+,
+{
+    "categoryId":"a",
+    "productId": 2,
+    "productName": "Nikon D5600",
+    "productCode": "GDN-0012",
+    "releaseDate": "March 05, 2021",
+    "description": "Nikon D5600 with AF-P 18-55 mm",
+    "price": 25.39,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/Camera2.jpg"
+},
+{
+    "categoryId":"a",
+    "productId": 3,
+    "productName": "Nikon D3500",
+    "productCode": "GDN-0013",
+    "releaseDate": "April 11, 2021",
+    "description": "Nikon D3500 DX-Format DSLR Two Lens Kit",
+    "price": 40.43,
+    "starRating": 4.4,
+    "imageUrl": "assets/images/Camera3.jpg"
+},
+{
+    "categoryId":"a",
+    "productId": 4,
+    "productName": "Sony Alpha ILCE 6000Y",
+    "productCode": "GDN-0014",
+    "releaseDate": "January 09, 2021",
+    "description": "Sony Alpha ILCE 6000Y 24.3 MP Mirrorless Camera",
+    "price": 19.96,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/Camera4.jpg"
+},
+{
+    "categoryId":"a",
+    "productId": 5,
+    "productName": "Panasonic LUMIX G7",
+    "productCode": "GDN-0015",
+    "releaseDate": "January 28, 2021",
+    "description": "Panasonic LUMIX G7 16.00 MP 4K Mirrorless Interchangeable Lens Camera",
+    "price": 25.78,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/Camera5.jpg"
+},
+{
+    "categoryId":"b",
+    "productId": 6,
+    "productName": "HP 15 (2021) Thin & Light 11th Gen Core i3 Laptop",
+    "productCode": "GDN-0016",
+    "releaseDate": "May 01, 2021",
+    "description": "HP 15 (2021) Thin & Light 11th Gen Core i3 Laptop, 8 GB RAM, 1TB HDD, 15.6-inch (39.62 cms) FHD Screen, Windows 10",
+    "price": 45.35,
+    "starRating": 3.9,
+    "imageUrl": "assets/images/Laptop1.jpg"
+},
+{
+    "categoryId":"b",
+    "productId": 7,
+    "productName": "HP Pavilion x360 (2021) FHD Touchscreen Laptop",
+    "productCode": "GDN-0017",
+    "releaseDate": "April 3, 2021",
+    "description": "HP Pavilion x360 (2021) FHD Touchscreen Laptop, 11th Gen Core i3, 8 GB RAM, 512GB SSD, 2-in-1 Convertible, Windows 10",
+    "price": 55.67,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/Laptop2.jpg"
+},
+{
+    "categoryId":"b",
+    "productId": 8,
+    "productName": "Lenovo IdeaPad Slim 5 AMD Ryzen Laptop",
+    "productCode": "GDN-0018",
+    "releaseDate": "February 5, 2021",
+    "description": "Lenovo IdeaPad Slim 5 AMD Ryzen 7 4700U 14 inch (35.56 cms) Full HD IPS Thin and Light Laptop (8GB/512GB SSD/Windows",
+    "price": 48.98,
+    "starRating": 4,
+    "imageUrl": "assets/images/Laptop3.jpg"
+},
+{
+    "categoryId":"b",
+    "productId": 9,
+    "productName": "Dell XPS 9310 13.4 inch FHD Display Thin & Light Intel",
+    "productCode": "GDN-0019",
+    "releaseDate": "January 10, 2021",
+    "description": "Dell XPS 9310 13.4 inch FHD Display Thin & Light Intel Evo 11th Gen Laptop (i5-1135G7 / 8 GB / 512 SSD",
+    "price": 60.45,
+    "starRating": 2.3,
+    "imageUrl": "assets/images/Laptop4.jpg"
+},
+{
+    "categoryId":"b",
+    "productId": 10,
+    "productName": "Apple MacBook Pro",
+    "productCode": "GDN-0020",
+    "releaseDate": "April 15, 2021",
+    "description": "Apple MacBook Pro (16-inch, 16GB RAM, 512GB Storage, 2.6GHz 9th Gen Intel Core i7) - Space Grey",
+    "price": 75.80,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/Laptop5.jpg"
+},
+{
+    "categoryId":"c",
+    "productId": 11,
+    "productName": "HUAWEI MediaPad T5 Tablet-Black",
+    "productCode": "GDN-0021",
+    "releaseDate": "April 13, 2021",
+    "description": "HUAWEI MediaPad T5 Tablet-Black (10.1 inch, 3+32GB, Wi-Fi + 4G LTE, 5 MP Rear Camera, 5100mAH Battery, 16.7M Colours, Dual Stereo Speakers, Children's Corner, Octa-Core Processor, Bluetooth)",
+    "price": 15.43,
+    "starRating": 4.2,
+    "imageUrl": "assets/images/Tablet1.jpg"
+},
+{
+    "categoryId":"c",
+    "productId": 12,
+    "productName": "Lenovo Tab M10 FHD Plus Tablet",
+    "productCode": "GDN-0022",
+    "releaseDate": "January 20, 2021",
+    "description": "Lenovo Tab M10 FHD Plus Tablet (10.3-inch, 2GB, 32GB, Wi-Fi + LTE, Volte Calling), Platinum Grey",
+    "price": 13.56,
+    "starRating": 4.2,
+    "imageUrl": "assets/images/Tablet2.jpg"
+},
+{
+    "categoryId":"c",
+    "productId": 13,
+    "productName": "Samsung Galaxy Tab S7",
+    "productCode": "GDN-0023",
+    "releaseDate": "December 20, 2020",
+    "description": "Samsung Galaxy Tab S7 27.81 cm (11 inch) 120 Hz Display, S-Pen in Box, Quad Speakers, 6 GB RAM, 128 GB Internal,Wi-Fi + LTE, Mystic Black",
+    "price": 30.89,
+    "starRating": 4.1,
+    "imageUrl": "assets/images/tablet3.jpg"
+},
+{
+    "categoryId":"c",
+    "productId": 14,
+    "productName": "Samsung Galaxy Tab S6",
+    "productCode": "GDN-0024",
+    "releaseDate": "December 20, 2020",
+    "description": "Samsung Galaxy Tab S6 Lite 26.31 cm (10.4 inch), S-Pen in Box, Slim and Light, Dolby Atmos Sound, 4 GB RAM, 64 GB ROM, Wi-Fi Tablet, Oxford Grey",
+    "price": 44.53,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/Tablet4.jpg"
+},
+{
+    "categoryId":"c",
+    "productId": 15,
+    "productName": "New Apple iPad",
+    "productCode": "GDN-0025",
+    "releaseDate": "April 23, 2020",
+    "description": "New Apple iPad (10.2-inch, Wi-Fi + Cellular, 32GB) - Space Grey (Latest Model, 8th Generation)",
+    "price": 67.45,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/Tablet5.jpg"
+},
+{
+    "categoryId":"d",
+    "productId": 16,
+    "productName": "Redmi 9A",
+    "productCode": "GDN-0026",
+    "releaseDate": "February 12, 2020",
+    "description": "Redmi 9A (Nature Green, 2GB Ram, 32GB Storage) | 2GHz Octa-core Helio G25 Processor",
+    "price": 14.40,
+    "starRating": 3.5,
+    "imageUrl": "assets/images/Mobile1.jpg"
+},
+{
+    "categoryId":"d",
+    "productId": 17,
+    "productName": "Samsung Galaxy M31",
+    "productCode": "GDN-0027",
+    "releaseDate": "January 26, 2020",
+    "description": "Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)",
+    "price": 12.34,
+    "starRating": 4.0,
+    "imageUrl": "assets/images/Mobile2.jpg"
+},
+{
+    "categoryId":"d",
+    "productId": 18,
+    "productName": "New Apple iPhone 12 Mini",
+    "productCode": "GDN-0028",
+    "releaseDate": "January 12, 2020",
+    "description": "New Apple iPhone 12 Mini (128GB) - White",
+    "price": 55.66,
+    "starRating": 4.7,
+    "imageUrl": "assets/images/Mobile3.jpg"
+},
+{
+    "categoryId":"d",
+    "productId": 19,
+    "productName": "New Apple iPhone 12 Pro Max",
+    "productCode": "GDN-0029",
+    "releaseDate": "April 25, 2020",
+    "description": "New Apple iPhone 12 Pro Max (256GB) - Pacific Blue",
+    "price": 66.89,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/Mobile4.jpg"
+},
+{
+    "categoryId":"d",
+    "productId": 20,
+    "productName": "Samsung Galaxy S21",
+    "productCode": "GDN-0030",
+    "releaseDate": "January 03, 2020",
+    "description": "Samsung Galaxy S21 Ultra 5G (Phantom Silver, 12GB, 256GB Storage)",
+    "price": 77.56,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/Mobile5.jpg"
+},
+{
+    "categoryId":"e",
+    "productId": 21,
+    "productName": "Apple Watch Series 6 GPS",
+    "productCode": "GDN-0031",
+    "releaseDate": "May 05, 2020",
+    "description": "Apple Watch Series 6 GPS - 44 mm Blue Aluminium Case with Deep Navy Sport Band",
+    "price": 45.67,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/Wearable1.jpg"
+},
+{
+    "categoryId":"e",
+    "productId": 22,
+    "productName": "Fastrack reflex 2.0 Uni-sex",
+    "productCode": "GDN-0032",
+    "releaseDate": "February 12, 2020",
+    "description": "Fastrack reflex 2.0 Uni-sex activity tracker - Calorie counter, Call and message notifications and up to 10 Day battery Life",
+    "price": 12.43,
+    "starRating": 4.1,
+    "imageUrl": "assets/images/Wearable2.jpg"
+},
+{
+    "categoryId":"e",
+    "productId": 23,
+    "productName": "New Apple Watch Series 6",
+    "productCode": "GDN-0033",
+    "releaseDate": "April 10, 2020",
+    "description": "New Apple Watch Series 6 (GPS + Cellular, 44mm) - Gold Stainless Steel Case with Gold Milanese Loop",
+    "price": 35.74,
+    "starRating": 4.3,
+    "imageUrl": "assets/images/Wearable3.jpg"
+},
+{
+    "categoryId":"e",
+    "productId": 24,
+    "productName": "OnePlus Band (Black)",
+    "productCode": "GDN-0034",
+    "releaseDate": "March 22, 2020",
+    "description": "OnePlus Band (Black) + Additional Strap (Blue)",
+    "price": 11.23,
+    "starRating": 4.4,
+    "imageUrl": "assets/images/Wearable4.jpg"
+},
+{
+    "categoryId":"e",
+    "productId": 25,
+    "productName": "Oppo Smart Band Style(Black)",
+    "productCode": "GDN-0035",
+    "releaseDate": "May 12, 2020",
+    "description": "Oppo Smart Band Style(Black) - Oximeter Function Built-in, Continuous SPO2 (Blood Oxygen Saturation) Monitoring, 1.1 inch",
+    "price": 11.23,
+    "starRating": 4.0,
+    "imageUrl": "assets/images/Wearable5.jpg"
+}
+]
