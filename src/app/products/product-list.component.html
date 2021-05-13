@@ -36,6 +36,9 @@
       <table class='table' *ngIf='products.length'>
         
         <tbody>
+            <div>
+              <p>Please select the desired category!</p>
+            </div>
             <tr *ngFor='let product of filteredProducts'>
               <div *ngIf="product.categoryId===categId">
                 <td>

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { IProduct } from "src/app/products/product";
 import { ProductService } from "src/app/products/product.service";
 import { CartService } from "src/app/products/cart.service";
+import { AuthService } from "src/app/auth.service";
 
 @Component({
   templateUrl: './product-detail.component.html',
@@ -17,7 +18,8 @@ export class ProductDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private productService: ProductService,
-    private cartService: CartService
+    private cartService: CartService,
+    public authService: AuthService
   ) { }
 
   ngOnInit(): void {

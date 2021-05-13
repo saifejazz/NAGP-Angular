@@ -64,19 +64,19 @@
               <table class="table shop-table">
                 <tr>
                   <td>Subtotal</td>
-                  <td>{{this.totalPrice}}</td>
+                  <td>{{this.totalPrice | currency:'USD':'symbol':'1.2-2' }}</td>
                 </tr>
                 <tr>
                   <td>Tax</td>
-                  <td>{{this.tax}}</td>
+                  <td>{{this.tax | currency:'USD':'symbol':'1.2-2' }}</td>
                 </tr>
                 <tr>
                   <td>Shipping Charge</td>
-                  <td>{{this.shippingCharge}}</td>
+                  <td>{{this.shippingCharge | currency:'USD':'symbol':'1.2-2' }}</td>
                 </tr>
                 <tr>
                   <td><b>Total Amount</b></td>
-                  <td><b>{{this.totalAmount}}</b></td>
+                  <td><b>{{this.totalAmount | currency:'USD':'symbol':'1.2-2' }}</b></td>
                 </tr>
               </table>
             </div>
