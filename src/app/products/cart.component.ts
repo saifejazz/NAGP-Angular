@@ -59,22 +59,34 @@ export class CartComponent implements OnInit {
   }
 
   deleteFromCart(value: number) {
-    this.totalPrice = this.totalPrice - this.items[value].price*this.items[value].quantity ;
+    if(this.items[value].quantity > 0)
+      this.totalPrice = this.totalPrice - this.items[value].price*this.items[value].quantity ;
     this.items[value].quantity = 0;
+    if (value > -1) {
+      this.items.splice(value, 1);
+    }
     this.cartService.updatedItems(this.items);
     this.cartService.updatePrice(this.totalPrice);
+    if(this.items.length === 0) {
+      this.clearCart();
+    }
   }
 
   minusQty(value: number) {
     console.log(value);
-    this.items[value].quantity -= 1;
     this.totalPrice = this.totalPrice - this.items[value].price;
+    this.items[value].quantity -= 1;
+    if(this.items[value].quantity === 0) {
+      this.deleteFromCart(value);
+    }
+    
     this.cartService.updatedItems(this.items);
     this.cartService.updatePrice(this.totalPrice);
   }
 
   clearCart() {
         this.items = [];
+        this.items.length = 0;
         this.totalPrice = 0;
         localStorage.setItem("totalPrice", "0");
         localStorage.setItem("cartData", "");

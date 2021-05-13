@@ -4,40 +4,46 @@
             <div class="row mt-5">
               <div class="col-lg-9">
                 <div class="row shop-listing">
-                  <table class="table shop-table">
+                  <table class="table shop-table" style="width: 100%;">
                     <tr>
                       <th class="b-0">Name</th>
                       <th class="b-0">Price</th>
                       <th class="b-0">Quantity</th>
-                      <th class="b-0">Action</th>
+                      <th class="b-0">Edit</th>
                       <th class="b-0 text-right">Total Price</th>
+                      <th class="b-0">Action</th>
                     </tr>
                     <tr *ngFor="let item of getItems(); index as i;">
-                      <div *ngIf="item.quantity != 0">
-                        <td>{{ item.productName }}</td>
-                        <td>{{ item.price }}</td>
-                        <td>{{item.quantity}}</td>
-                        <td>
+                      <!--<div *ngIf="item.quantity">-->
+                        <td class="b-0" *ngIf="item.quantity">{{ item.productName }}</td>
+                        <td class="b-0" *ngIf="item.quantity">{{ item.price  | currency:'USD':'symbol':'1.2-2' }}</td>
+                        <td class="b-0" *ngIf="item.quantity">{{item.quantity}}</td>
+                        <td class="b-0" *ngIf="item.quantity">
                           <button class="btn btn-primary btn-sm" (click)=minusQty(i)>-</button>                       
                           1
                           <button class="btn btn-primary btn-sm" (click)=addQty(i)>+</button>
-                          <button class="btn btn-primary btn-sm" (click)=deleteFromCart(i)>+</button>
+                          
                         </td>
                         
-                        <td class="text-right">
-                          <h5 class="font-medium m-b-30">{{item.price * item.quantity}}</h5>
+                        <td class="b-0" *ngIf="item.quantity">
+                          <h5 class="font-medium m-b-30">{{item.price * item.quantity | currency:'USD':'symbol':'1.2-2' }}</h5>
                         </td>
-                      </div>
+                        <td class="b-0" *ngIf="item.quantity">
+                          <button class="btn btn-primary btn-sm" (click)=deleteFromCart(i)>Delete</button>
+                        </td>
+                      <!--</div>-->
                     </tr>
                     <tr>
-                      <td colspan="3" align="right">Subtotal :{{totalPrice}}</td>
+                      <td colspan="3" align="right" *ngIf="totalPrice">Subtotal :{{totalPrice | currency:'USD':'symbol':'1.2-2' }}</td>
                       <td colspan="4" align="right">
-                        <button class="btn btn-danger" (click)=clearCart()>Empty Cart</button>
+                        <button class="btn btn-danger" *ngIf="totalPrice" (click)=clearCart()>Empty Cart</button>
                       </td>
                     </tr>
+                    <p *ngIf="totalPrice===0">Your cart is empty. Please add products to cart.</p>
                   </table>
                   <div class='card-footer'>
                     <button class='btn btn-outline-secondary'
+                            *ngIf="totalPrice"
                             style='width:150px'
                             (click)='checkout()'>
                       Checkout

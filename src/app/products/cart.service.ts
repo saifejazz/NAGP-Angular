@@ -56,7 +56,9 @@ export class CartService {
 
     clearCart() {
         this.items = [];
+        this.items.length = 0;
         this.totalPrice = 0;
+        localStorage.setItem("totalPrice", "0");
         localStorage.setItem("cartData", "");
         return this.items;
     }

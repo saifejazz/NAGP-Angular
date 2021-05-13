@@ -8,16 +8,20 @@ import { Router } from  '@angular/router';
   selector: 'pm-root',
   template: `
   <nav class='navbar navbar-expand navbar-light bg-light'>
-        <a class='navbar-brand'>{{pageTitle}}</a>
-        <ul class='nav nav-pills'>
+        <a class='navbar-brand' style="margin-right:45px">{{pageTitle}}</a>
+        <ul class='nav nav-pills' style="float:left; width:50%">
           <li><a class='nav-link' routerLinkActive='active' routerLink='/welcome'>Home</a></li>
           <li><a class='nav-link' routerLinkActive='active' routerLink='/products'>Product List</a></li>
-          <li style="floaf:right"><a *ngIf="this.authService.loggedIn == false" class='nav-link' routerLinkActive='active' routerLink='/login'>Login</a></li>
-          <li style="floaf:right">
-          <a routerLink="/cart" class="button fancy-button">
-            <i class="material-icons">shopping_cart</i>
-          </a></li>
-          <li><button *ngIf="this.authService.loggedIn == true" (click)="logout()" class="btn btn-danger">Logout</button></li>
+        </ul>
+        <ul class='nav nav-pills' style="float:right; width:50%">
+          
+          <li>
+            <a routerLink="/cart" class="button fancy-button">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </li>
+          <li><a *ngIf="this.authService.loggedIn == false" class='nav-link' routerLinkActive='active' routerLink='/login'>Login</a></li>
+          <li><a *ngIf="this.authService.loggedIn == true" (click)="logout()" class="nav-link">Logout</a></li>
         </ul>
     </nav>
     <div class='container'>
@@ -27,7 +31,7 @@ import { Router } from  '@angular/router';
 })
 
 export class AppComponent {
-  pageTitle: string = 'Acme Product Management';
+  pageTitle: string = 'Elekronics';
   products: IProduct[] = [];
 
   constructor(private router: Router, public authService: AuthService) {}
