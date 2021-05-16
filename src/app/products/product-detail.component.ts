@@ -38,7 +38,8 @@ export class ProductDetailComponent implements OnInit {
   }
   addToCart(product: any) {
     this.cartService.addToCart(product);
-    window.alert('Your product has been added to the cart!');
+    //window.alert('Your product has been added to the cart!');
+    this.router.navigate(['/cart']);
   }
 
   // function to make a back button on pdp

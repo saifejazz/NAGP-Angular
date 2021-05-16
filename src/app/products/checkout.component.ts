@@ -53,7 +53,7 @@ export class CheckoutComponent implements OnInit {
     this.totalPrice = Number(localStorage.getItem("totalPrice"));
     this.tax = this.totalPrice/5;
     this.shippingCharge = this.totalPrice/20;
-    this.totalAmount += this.tax + this.shippingCharge;
+    this.totalAmount = this.totalPrice + this.tax + this.shippingCharge;
 
     this.checkoutForm = this.formBuilder.group({
     name: ['', Validators.required],

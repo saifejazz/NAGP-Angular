@@ -1,0 +1,143 @@
+[
+  {
+    "categoryId":1,
+    "categoryTitle": "Cameras",
+    "products": [
+        {
+            "categoryId":1,
+            "productId": 101,
+            "productName": "Canon EOS R",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "Canon EOS R Mirrorless Camera Body only  (Black)",
+            "price": 119.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        },
+        {
+            "categoryId":1,
+            "productId": 102,
+            "productName": "Canon EOS 80D",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "Canon EOS 80D DSLR Camera Body with Single Lens: EF-S 18-135 IS USM (16 GB SD Card)  (Black)",
+            "price": 149.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        }
+    ]
+  },
+  {
+    "categoryId":2,
+    "categoryTitle": "Laptops",
+    "product": [
+        {
+            "categoryId":2,
+            "productId": 201,
+            "productName": "HP Pavilion Gaming Ryzen 5",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "HP Pavilion Gaming Ryzen 5 Quad Core 3550H - (8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) 15-ec0104AX Gaming Laptop  (15.6 inch, Black, 1.98 kg)",
+            "price": 519.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        },
+        {
+            "categoryId":2,
+            "productId": 202,
+            "productName": "Lenovo Ideapad 3 Ryzen 3",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "Lenovo Ideapad 3 Ryzen 3 Dual Core 3250U - (4 GB/1 TB HDD/Windows 10 Home) 15ADA05 Laptop  (15.6 inch, Platinum Grey, 1.85 kg, With MS Office)",
+            "price": 819.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        }
+    ]
+  },
+  {
+    "categoryId":3,
+    "categoryTitle": "Tablets",
+    "products": [
+        {
+            "categoryId":3,
+            "productId": 301,
+            "productName": "Lenovo Tab M10",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "Lenovo Tab M10 (HD) 2 GB RAM 32 GB ROM 10.1 inch with Wi-Fi+4G Tablet (Slate Black)",
+            "price": 219.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        },
+        {
+            "categoryId":3,
+            "productId": 302,
+            "productName": "APPLE ipad Mini (2019)",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "APPLE ipad Mini (2019) 64 GB ROM 7.9 inch with Wi-Fi Only (Gold)",
+            "price": 319.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        }
+    ]
+  },
+  {
+    "categoryId":4,
+    "categoryTitle": "Mobiles",
+    "Product": [
+        {
+            "categoryId":4,
+            "productId": 401,
+            "productName": "APPLE iPhone 11 Pro",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "APPLE iPhone 11 Pro (Midnight Green, 64 GB)",
+            "price": 1119.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        },
+        {
+            "categoryId":4,
+            "productId": 401,
+            "productName": "ASUS ROG Phone 3",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "ASUS ROG Phone 3 (Black, 128 GB)  (8 GB RAM)",
+            "price": 919.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        }
+    ]
+  },
+  {
+    "categoryId":5,
+    "categoryTitle": "Wearables",
+    "Product": [
+        {
+            "categoryId":5,
+            "productId": 501,
+            "productName": "SAMSUNG Galaxy Watch 3",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "SAMSUNG Galaxy Watch 3 41 mm Smartwatch  (Black Strap, Regular)",
+            "price": 79.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        },
+        {
+            "categoryId":5,
+            "productId": 501,
+            "productName": "Honor Watch ES",
+            "productCode": "GDN-0011",
+            "releaseDate": "March 19, 2021",
+            "description": "Honor Watch ES Smartwatch  (Black Strap, Regular)",
+            "price": 99.95,
+            "starRating": 3.2,
+            "imageUrl": "assets/images/leaf_rake.png"
+        }
+    ]
+  }
+  
+]

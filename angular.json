@@ -35,6 +35,27 @@
             "scripts": []
           },
           "configurations": {
+            "en": {    
+              "aot": true,    
+              "i18nFile": "src/translate/messages.en.xlf",    
+              "i18nFormat": "xlf",    
+              "i18nLocale": "en",    
+              "i18nMissingTranslation": "error"    
+            },
+            "es": {    
+              "aot": true,    
+              "i18nFile": "src/translate/messages.es.xlf",    
+              "i18nFormat": "xlf",    
+              "i18nLocale": "es",    
+              "i18nMissingTranslation": "error"    
+            },
+            "fr": {    
+              "aot": true,    
+              "i18nFile": "src/translate/messages.fr.xlf",    
+              "i18nFormat": "xlf",    
+              "i18nLocale": "fr",    
+              "i18nMissingTranslation": "error"    
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -70,6 +91,15 @@
             "browserTarget": "apm:build"
           },
           "configurations": {
+            "en": {    
+              "browserTarget": "apm:build:en"    
+            },
+            "es": {    
+              "browserTarget": "apm:build:es"    
+            },
+            "fr": {    
+              "browserTarget": "apm:build:fr"    
+            },
             "production": {
               "browserTarget": "apm:build:production"
             }

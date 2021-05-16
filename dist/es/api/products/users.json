@@ -1,0 +1,38 @@
+[
+  {
+    "userid": 1,
+    "name": "Ross",
+    "email": "ross@friends.com",
+    "password": "Ross@123"
+  },
+  {
+    "userid": 2,
+    "name": "Rachel",
+    "email": "rachel@friends.com",
+    "password": "Rachel@123"
+  },
+  {
+    "userid": 3,
+    "name": "Phoebe",
+    "email": "phoebe@friends.com",
+    "password": "Phoebe@123"
+  },
+  {
+    "userid": 4,
+    "name": "Joey",
+    "email": "joey@friends.com",
+    "password": "Joey@123"
+  },
+  {
+    "userid": 5,
+    "name": "Chandler",
+    "email": "chandler@friends.com",
+    "password": "Chandler@123"
+  },
+  {
+    "userid": 6,
+    "name": "Monika",
+    "email": "monika@friends.com",
+    "password": "Monika@123"
+  }
+]

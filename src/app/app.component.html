@@ -1,7 +1,23 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Hello! Welcome to {{title}}!!
-  </h1>
-  ... Starter Files ...
-</div>
+<nav class='navbar navbar-expand navbar-light bg-light'>
+        <a class='navbar-brand' style="margin-right:45px">{{pageTitle}}</a>
+        <ul class='nav nav-pills' style="float:left; width:50%">
+          <li><a i18n class='nav-link' routerLinkActive='active' routerLink='/welcome'>Home</a></li>
+          <li><a i18n class='nav-link' routerLinkActive='active' routerLink='/products'>Product List</a></li>
+          <!--<ng-container *ngFor="let language of languageList">  
+            <a href="/{{language.code}}/"><button class="button">{{language.label}}</button></a>  
+          </ng-container>-->
+        </ul>
+        <ul class='nav nav-pills' style="float:right; width:50%">
+          
+          <li>
+            <a routerLink="/cart" class="button fancy-button">
+              <i class="material-icons">shopping_cart</i>
+            </a>
+          </li>
+          <li><a i18n *ngIf="this.authService.loggedIn == false" class='nav-link' routerLinkActive='active' routerLink='/login'>Login</a></li>
+          <li><a i18n *ngIf="this.authService.loggedIn == true" (click)="logout()" class="nav-link">Logout</a></li>
+        </ul>
+    </nav>
+    <div class='container'>
+      <router-outlet></router-outlet>
+    </div>
