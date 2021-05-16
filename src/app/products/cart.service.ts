@@ -42,7 +42,7 @@ export class CartService {
     }
 
     deleteFromCart(product: any) {
-        
+
     }
 
     getItems() {
