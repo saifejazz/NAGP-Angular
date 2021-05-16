@@ -9,12 +9,12 @@ This project was generated with Angular CLI .
 5.	Project features in English, Spanish and French language.
 6.	Products are distributed across 5 different categories.
 7.	Run the following commands to run the application in the desired language.
-i)	[en] ng serve --configuration=en
-ii)	[es] ng serve --configuration=es
-iii)	[fr] ng serve --configuration=fr
-8.	Use of json for creating and accessing mock data
-9.	[AuthGuard] implementation for protection of routes, prevents non-login user to access cart page, checkout page, success page.
-10.	Unit test cases written for
+8.	[en] ng serve --configuration=en
+9.	[es] ng serve --configuration=es
+10.	[fr] ng serve --configuration=fr
+11.	Use of json for creating and accessing mock data
+12.	[AuthGuard] implementation for protection of routes, prevents non-login user to access cart page, checkout page, success page.
+13.	Unit test cases written for
 a.	AuthService
 b.	SuccessComponent
 
