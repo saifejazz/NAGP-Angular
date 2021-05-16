@@ -68,9 +68,9 @@ export class CartService {
        this.saveToLocalStorage();
     }
 
-    increaseQty(payload: any) {
-        return this.http.post(`${environment.baseURL}/cart`, payload);
-    }
+    // increaseQty(payload: any) {
+    //     return this.http.post(`${environment.baseURL}/cart`, payload);
+    // }
 
     getShippingPrices() {
         return this.http.get<{ type: string, price: number }[]>('/assets/shipping.json');

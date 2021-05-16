@@ -24,8 +24,8 @@ import { MatSelectModule } from "@angular/material/select";
     HttpClientModule,
     RouterModule.forRoot([
       {path:'welcome', component: WelcomeComponent},
-      {path:'', redirectTo: 'welcome', pathMatch: 'full'},
-      {path:'**', redirectTo: 'welcome', pathMatch: 'full'},
+      {path:'', redirectTo: 'welcome', pathMatch: 'prefix'},
+      {path:'**', redirectTo: 'welcome', pathMatch: 'prefix'},
     ]),
     BrowserAnimationsModule,
     MatSliderModule,
